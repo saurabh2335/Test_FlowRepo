@@ -1,0 +1,35 @@
+{
+  "name": "describedbinstance",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "description": "Describe DB Instance Element",
+  "author": "swagh@tibco.com",
+  "inputs":[
+   {
+      "name": "AccessKey",
+      "type": "string",
+	  "required" : "true"
+    },
+	{
+      "name": "SecretKey",
+      "type": "string",
+	  "required" : "true"
+    },
+	{
+      "name": "RdsEndpoint",
+      "type": "string",
+	  "required" : "true"
+    },
+	{
+      "name": "DBInstanceIdentifier",
+      "type": "string",
+	  "required" : "true"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output",
+      "type": "string"
+    }
+  ]
+}
